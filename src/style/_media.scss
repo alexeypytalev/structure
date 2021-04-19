@@ -1,0 +1,32 @@
+$break-xl: 1440px;
+$break-lg: 1024px;
+$break-md: 768px;
+$break-sm: 375px;
+
+$media: (
+	sm: 'screen and (max-width: #{$break-md - 1})',
+	md: 'screen and (min-width: #{$break-md}) and (max-width: #{$break-lg - 1})',
+	lg: 'screen and (min-width: #{$break-lg}) and (max-width: #{$break-xl - 1})',
+	xl: 'screen and (min-width: #{$break-xl})',
+	md-up: 'screen and (min-width: #{$break-md})',
+	md-down: 'screen and (max-width: #{$break-lg - 1})',
+	lg-up: 'screen and (min-width: #{$break-lg})',
+	lg-down: 'screen and (max-width: #{$break-xl - 1})'
+);
+
+
+@mixin media($query) {
+	$__query: null;
+
+	@each $type in $query {
+		@if map-has-key($media, $type) {
+			$__query: append($__query, unquote(map-get($media, $type)), comma);
+		} @else {
+			@warn $type;
+		}
+	}
+
+	@media #{$__query} {
+		@content;
+	}
+}

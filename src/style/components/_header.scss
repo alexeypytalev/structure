@@ -1,0 +1,19 @@
+.header {
+    padding: 38px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__structure {
+        font-weight: 700;
+        font-size: 23px;
+        letter-spacing: 0.02em;
+    }
+
+    &__login {
+        font-weight: 500;
+    }
+}
