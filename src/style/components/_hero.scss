@@ -1,0 +1,206 @@
+.hero {
+    position: relative;
+
+    &__inner {
+        @include media(md) {
+            padding-bottom: 350px;
+        }
+
+        @include media(lg-up) {
+            position: relative;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(100px);
+
+            @include media(sm) {
+                top: 117px;
+                bottom: 0;
+            }
+
+            @include media(md-down) {
+                right: 0;
+                left: 0;
+            }
+
+            @include media(md) {
+                height: 730px;
+                top: -117px;
+            }
+
+            @include media(lg) {
+                right: 235px;
+            }
+
+            @include media(lg-up) {
+                width: 9999px;
+                top: -117px;
+                bottom: 0;
+            }
+
+            @include media(xl) {
+                right: 347px;
+            }
+        }
+
+        @include media(sm) {
+            padding-top: 117px;
+        }
+
+        @include media(xl) {
+            padding-top: 155px;
+        }
+    }
+
+    &__content {
+        position: relative;
+        z-index: 1;
+
+        @include media(sm) {
+            padding-top: 38px;
+            padding-bottom: 55px;
+        }
+
+        @include media(md) {
+            padding-top: 60px;
+        }
+
+        @include media(lg) {
+            padding-top: 70px;
+        }
+
+        @include media(lg-up) {
+            padding-bottom: 85px;
+        }
+
+        @include media(xl) {
+            padding-top: 100px;
+        }
+    }
+
+    &__svg {
+        position: absolute;
+
+        svg {
+            max-width: 100%;
+            animation: rotating 60s linear infinite;
+        }
+
+        @include media(sm) {
+            top: -152px;
+            width: 333px;
+        }
+
+        @include media(md) {
+            bottom: 45px;
+            width: 559px;
+        }
+
+        @include media(md-down) {
+            margin: auto;
+            left: 0;
+            right: 0;
+        }
+
+        @include media(lg) {
+            width: 550px;
+            top: -75px;
+            right: 0;
+        }
+
+        @include media(xl) {
+            width: 600px;
+            top: 20px;
+            right: 30px;
+        }
+    }
+
+    &__brands {
+        padding: 0;
+        list-style: none;
+        line-height: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: -30px;
+        margin-right: -30px;
+        margin-top: -20px;
+    }
+
+    &__brand {
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 88px;
+        line-height: 1.23;
+        letter-spacing: 0.02em;
+        margin: 0 0 12px;
+        background: radial-gradient(
+            1211.27% 92735.84% at -273.92% 100.44%,
+            #620001 0%,
+            #aa6ee5 13.82%,
+            #b0dcff 27.37%,
+            #caffff 38.3%,
+            #ffffff 54.45%,
+            #fdf074 66.95%,
+            #ff966b 80.49%,
+            #925e8c 89.96%,
+            #545c44 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        word-break: break-all;
+
+        @include media(lg) {
+            font-size: 96px;
+        }
+
+        @include media(xl) {
+            font-size: 112px;
+        }
+    }
+
+    &__descr {
+        max-width: 581px;
+        margin-top: 0;
+        margin-bottom: 40px;
+
+        @include media(lg-up) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__divider {
+        line-height: 0;
+
+        svg {
+            width: 100%;
+        }
+    }
+
+    .arr-login {
+        margin-bottom: 85px;
+
+        @include media(lg-up) {
+            margin-bottom: 125px;
+        }
+    }
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

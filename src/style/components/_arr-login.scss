@@ -1,0 +1,39 @@
+.arr-login {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.41;
+
+    &:hover &__arrow {
+        left: 20px;
+    }
+
+    &:hover &__ellipse-hover {
+        opacity: 1;
+    }
+
+    &__svg {
+        position: relative;
+        margin-left: 13px;
+        display: inline-flex;
+        align-items: center;
+        line-height: 0;
+    }
+
+    &__ellipse {
+    }
+
+    &__ellipse-hover {
+        position: absolute;
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.2s;
+    }
+
+    &__arrow {
+        position: absolute;
+        left: 0;
+        transition: left 0.2s;
+    }
+}

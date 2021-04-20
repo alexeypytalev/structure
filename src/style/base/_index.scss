@@ -2,21 +2,25 @@
 // Be very carefully since it affects all elements and styles!
 html {
 	background: #101010;
-	color: #DFE4E8;
+	color: #dfe4e8;
 	direction: ltr;
 	font: 18px/26px 'Lexend', sans-serif;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	font-synthesis: none;
 	scroll-behavior: smooth;
-	-ms-text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	-webkit-overflow-scrolling: touch;
 }
 
-body {
+* {
 	box-sizing: border-box;
-	margin: 0;
+
+	&:before,
+	&:after {
+		box-sizing: border-box;
+	}
 }
 
 a {

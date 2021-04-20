@@ -1,5 +1,15 @@
 .header {
-    padding: 38px 0;
+    position: relative;
+    z-index: 5;
+
+    @include media(sm) {
+        padding-top: 28px;
+    }
+
+    @include media(md-up) {
+        padding-top: 38px;
+        padding-bottom: 38px;
+    }
 
     &__inner {
         display: flex;
@@ -15,5 +25,10 @@
 
     &__login {
         font-weight: 500;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #b0dcff;
+        }
     }
 }
