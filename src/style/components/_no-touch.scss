@@ -1,0 +1,24 @@
+.no-touch {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @include media(lg) {
+        padding-top: 120px;
+        padding-bottom: 140px;
+    }
+
+    @include media(xl) {
+        padding-top: 120px;
+        padding-bottom: 140px;
+    }
+
+    &__info {
+        @include media(lg) {
+            width: 629px;
+        }
+
+        @include media(xl) {
+            width: 773px;
+        }
+    }
+}

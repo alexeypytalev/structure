@@ -174,7 +174,7 @@
     }
 
     &__descr {
-        width: 581px;
+        max-width: 581px;
         margin-bottom: 40px;
 
         @include media(lg-up) {
