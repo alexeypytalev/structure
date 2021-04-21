@@ -1,0 +1,95 @@
+.structure {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    overflow-x: hidden;
+
+    @include media(xl) {
+        padding-top: 120px;
+        padding-bottom: 90px;
+    }
+
+    &__inner {
+        position: relative;
+
+        @include media(xl) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__info {
+        @include media(sm) {
+            margin-bottom: 40px;
+        }
+
+        @include media(md-lg) {
+            width: 630px;
+        }
+
+        @include media(xl) {
+            width: 532px;
+        }
+    }
+
+    &__point {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 34px;
+        color: #ffffff;
+    }
+
+    &__box {
+        @include media(md-up) {
+            padding-bottom: 12px;
+        }
+    }
+
+    &__points {
+        position: relative;
+
+        @include media(md) {
+            margin-left: 80px;
+            margin-top: 8px;
+        }
+
+        @include media(lg) {
+            margin-left: 440px;
+            margin-top: 28px;
+        }
+
+        @include media(xl) {
+            order: -1;
+        }
+    }
+
+    &__point {
+        position: absolute;
+        width: 185px;
+
+        &--1 {
+            top: 36px;
+        }
+
+        &--2 {
+            top: 124px;
+        }
+
+        &--3 {
+            top: 265px;
+        }
+
+        @include media(sm) {
+            left: 142px;
+        }
+
+        @include media(md-up) {
+            left: 305px;
+        }
+    }
+
+    &__svg {
+        @include media(sm) {
+            transform: translateX(-160px);
+        }
+    }
+}

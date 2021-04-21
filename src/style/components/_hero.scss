@@ -2,6 +2,10 @@
     position: relative;
 
     &__inner {
+        @include media(sm) {
+            overflow: hidden;
+        }
+
         @include media(md) {
             padding-bottom: 350px;
         }
@@ -170,7 +174,7 @@
     }
 
     &__descr {
-        max-width: 581px;
+        width: 581px;
         margin-bottom: 40px;
 
         @include media(lg-up) {
