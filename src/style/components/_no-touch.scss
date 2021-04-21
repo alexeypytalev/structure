@@ -21,4 +21,10 @@
             width: 773px;
         }
     }
+
+    &__title {
+        @include media(lg-up) {
+            margin-bottom: 32px;
+        }
+    }
 }
