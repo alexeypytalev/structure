@@ -171,19 +171,10 @@
 
     &__descr {
         max-width: 581px;
-        margin-top: 0;
         margin-bottom: 40px;
 
         @include media(lg-up) {
             margin-bottom: 50px;
-        }
-    }
-
-    &__divider {
-        line-height: 0;
-
-        svg {
-            width: 100%;
         }
     }
 
@@ -200,6 +191,7 @@
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }

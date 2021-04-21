@@ -1,0 +1,82 @@
+.understanding {
+    @include media(md-down) {
+        padding-bottom: 80px;
+    }
+
+    @include media(lg-down) {
+        padding-top: 80px;
+    }
+
+    @include media(lg) {
+        padding-bottom: 155px;
+    }
+
+    @include media(xl) {
+        padding-top: 127px;
+        padding-bottom: 129px;
+    }
+
+    &__inner {
+        @include media(lg) {
+            flex-direction: column;
+        }
+
+        @include media(lg-up) {
+            display: flex;
+        }
+
+        @include media(xl) {
+            justify-content: space-between;
+        }
+    }
+
+    &__info {
+        @include media(md-lg) {
+            max-width: 640px;
+        }
+
+        @include media(lg) {
+            margin-bottom: 60px;
+        }
+
+        @include media(xl) {
+            width: 507px;
+        }
+    }
+
+    &__boxes {
+        .divider {
+            display: none;
+
+            @include media(sm) {
+                display: block;
+                margin-bottom: 24px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 67%;
+            }
+        }
+
+        @include media(md) {
+            padding-top: 80px;
+            margin: auto;
+        }
+
+        @include media(md-up) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 625px;
+        }
+
+        @include media(lg) {
+            align-self: flex-end;
+        }
+    }
+
+    &__title {
+        @include media(md-up) {
+            width: 441px;
+        }
+    }
+}

@@ -10,10 +10,10 @@ $media: (
 	xl: 'screen and (min-width: #{$break-xl})',
 	md-up: 'screen and (min-width: #{$break-md})',
 	md-down: 'screen and (max-width: #{$break-lg - 1})',
+	md-lg: 'screen and (min-width: #{$break-md}) and (max-width: #{$break-xl - 1})',
 	lg-up: 'screen and (min-width: #{$break-lg})',
-	lg-down: 'screen and (max-width: #{$break-xl - 1})'
+	lg-down: 'screen and (max-width: #{$break-xl - 1})',
 );
-
 
 @mixin media($query) {
 	$__query: null;
