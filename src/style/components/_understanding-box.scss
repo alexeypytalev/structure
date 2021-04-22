@@ -8,7 +8,8 @@
     padding: 28px;
     background-color: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(100px);
-    background-image: url('../img/fade-bg.jpg');
+    background-image: url('../img/sbs-card.png');
+    background-repeat: no-repeat;
     background-size: cover;
 
     @include media(sm) {
@@ -20,7 +21,10 @@
     }
 
     &__divider {
+        display: none;
+
         @include media(md-up) {
+            display: block;
             position: absolute;
             bottom: 50%;
 

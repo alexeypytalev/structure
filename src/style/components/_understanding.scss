@@ -17,6 +17,8 @@
     }
 
     &__inner {
+        position: relative;
+
         @include media(lg) {
             flex-direction: column;
         }
@@ -45,6 +47,10 @@
     }
 
     &__boxes {
+        @include media(sm) {
+            padding-top: 20px;
+        }
+
         .divider {
             display: none;
 
@@ -74,9 +80,47 @@
         }
     }
 
-    &__title {
+    &__circle,
+    &__crystal {
+        display: none;
+
         @include media(md-up) {
-            width: 441px;
+            position: absolute;
+            display: block;
+        }
+    }
+
+    &__crystal {
+        @include media(md) {
+            bottom: -130px;
+            left: -37px;
+        }
+
+        @include media(lg) {
+            left: 0;
+            bottom: -83px;
+        }
+
+        @include media(xl) {
+            left: -130px;
+            bottom: -185px;
+        }
+    }
+
+    &__circle {
+        @include media(md) {
+            bottom: 230px;
+            right: -68px;
+        }
+
+        @include media(lg) {
+            top: 21px;
+            right: 0;
+        }
+
+        @include media(xl) {
+            top: -114px;
+            right: -80px;
         }
     }
 }
