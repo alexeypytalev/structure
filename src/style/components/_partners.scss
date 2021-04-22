@@ -1,0 +1,67 @@
+.partners {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @include media(xl) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    &__title {
+        @include media(sm) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__brands {
+        display: grid;
+
+        @include media(sm) {
+            grid-gap: 16px;
+            grid-template-columns: repeat(auto-fit, 150px);
+        }
+
+        @include media(md) {
+            grid-template-columns: repeat(auto-fit, 189px);
+        }
+
+        @include media(md-up) {
+            grid-gap: 32px;
+        }
+
+        @include media(lg-up) {
+            padding-top: 40px;
+            grid-template-columns: repeat(auto-fit, 265px);
+        }
+    }
+
+    &__brand {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../img/partners-card.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        height: 145px;
+
+        @include media(sm) {
+            height: 90px;
+            grid-gap: 16px;
+
+            svg {
+                max-width: 120px;
+                max-height: 60px;
+            }
+        }
+
+        @include media(md-down) {
+            height: 104px;
+
+            svg {
+                max-width: 131px;
+                max-height: 65px;
+            }
+        }
+    }
+}
