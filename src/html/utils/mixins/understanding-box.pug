@@ -1,4 +1,8 @@
 mixin understanding(data, i)
     .understanding-box(class=`understanding-box--${++i}`)
         h3.understanding-box__title= data
-    if (i === 1)
+        if (i === 3)
+            .understanding-box__divider.understanding-box__divider--left
+                include ../../svg/understanding-line-left
+            .understanding-box__divider.understanding-box__divider--right
+                include ../../svg/understanding-line-right

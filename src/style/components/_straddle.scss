@@ -1,0 +1,28 @@
+.straddle {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @include media(lg-up) {
+        padding-top: 60px;
+    }
+
+    @include media(xl) {
+        padding-bottom: 120px;
+    }
+
+    &__info {
+        @include media(lg) {
+            width: 629px;
+        }
+
+        @include media(xl) {
+            width: 760px;
+        }
+    }
+
+    &__title {
+        @include media(lg-up) {
+            margin-bottom: 32px;
+        }
+    }
+}
