@@ -12,6 +12,10 @@
         padding-bottom: 140px;
     }
 
+    &__inner {
+        position: relative;
+    }
+
     &__info {
         @include media(lg) {
             width: 629px;
@@ -25,6 +29,74 @@
     &__title {
         @include media(lg-up) {
             margin-bottom: 32px;
+        }
+    }
+
+    &__data {
+        padding-top: 20px;
+        position: relative;
+        z-index: 1;
+
+        @include media(md-up) {
+            padding-top: 60px;
+        }
+
+        @include media(lg-up) {
+            display: flex;
+            justify-content: flex-end;
+
+            img {
+                width: 772px;
+            }
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__circle,
+    &__crystal {
+        display: none;
+        position: absolute;
+    }
+
+    &__circle {
+        @include media(md) {
+            width: 175px;
+            right: -45px;
+            bottom: -190px;
+        }
+
+        @include media(md-up) {
+            display: block;
+        }
+
+        @include media(lg) {
+            top: 42px;
+            right: 0;
+        }
+
+        @include media(xl) {
+            top: -120px;
+            right: 23px;
+        }
+    }
+
+    &__crystal {
+        @include media(lg-up) {
+            display: block;
+        }
+
+        @include media(lg) {
+            bottom: 18px;
+            left: -31px;
+        }
+
+        @include media(xl) {
+            bottom: 22px;
+            left: 140px;
         }
     }
 }
