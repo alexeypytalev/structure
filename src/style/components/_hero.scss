@@ -37,7 +37,7 @@
             }
 
             @include media(lg) {
-                right: 235px;
+                right: 270px;
             }
 
             @include media(lg-up) {
@@ -111,9 +111,9 @@
         }
 
         @include media(lg) {
-            width: 550px;
-            top: -75px;
-            right: 0;
+            width: 450px;
+            top: -52px;
+            right: 106px;
         }
 
         @include media(xl) {
