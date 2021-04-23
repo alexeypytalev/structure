@@ -1,6 +1,7 @@
 mixin sbs-token-box(data)
     - const {title, descr, img} = data
-    .sbs-token-box
-        h3.sbs-token-box__title= title
-        p.sbs-token-box__descr= descr
-        .sbs-token-box__img: img.img-fluid(src=`./img/${img}`, alt= title)
+        .sbs-token-box.noise-box
+            .sbs-token-box__inner.noise-box__inner
+                h3.sbs-token-box__title= title
+                p.sbs-token-box__descr= descr
+                .sbs-token-box__img: img.img-fluid(src=`./img/${img}`, alt= title)

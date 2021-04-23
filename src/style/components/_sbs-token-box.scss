@@ -1,37 +1,13 @@
 .sbs-token-box {
-    background-repeat: no-repeat;
-    background-size: contain;
     position: relative;
 
     @include media(sm) {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        width: 320px;
-        height: 506px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 20px 20px 100px;
-
         &:not(:last-child) {
             margin-bottom: 121px;
         }
     }
 
     @include media(md) {
-        height: 205px;
-
-        &:nth-child(even) {
-            padding-left: 40px;
-            padding-right: 141px;
-        }
-
-        &:nth-child(odd) {
-            padding-right: 40px;
-            padding-left: 141px;
-        }
-
         &:nth-child(even) &__img {
             top: 50%;
             right: 0;
@@ -43,37 +19,64 @@
             left: 0;
             transform: translate(-50%, -50%);
         }
+
+        &:nth-child(even) &__inner {
+            padding-left: 40px;
+            padding-right: 141px;
+        }
+
+        &:nth-child(odd) &__inner {
+            padding-right: 40px;
+            padding-left: 141px;
+        }
+    }
+
+    @include media(md-lg) {
+        height: 268px;
     }
 
     @include media(md-up) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-image: url('../img/sbs-card-token.png');
-
         &:not(:last-child) {
             margin-bottom: 40px;
         }
     }
 
     @include media(lg) {
-        padding-left: 141px;
-        padding-right: 40px;
+        width: 629px;
     }
 
     @include media(lg-up) {
-        height: 245px;
-        width: 772px;
-
         &:nth-child(even) {
             align-self: flex-end;
         }
     }
 
     @include media(xl) {
+        height: 246px;
         width: 772px;
-        padding-left: 165px;
-        padding-right: 56px;
+    }
+
+    &__inner {
+        @include media(sm) {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        @include media(md-up) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        @include media(lg) {
+            padding-left: 141px;
+            padding-right: 40px;
+        }
+
+        @include media(xl) {
+            padding-right: 56px;
+            padding-left: 165px;
+        }
     }
 
     &__title {
@@ -92,6 +95,7 @@
     &__img {
         position: absolute;
         z-index: 1;
+        filter: drop-shadow(0px 0px 80px rgba(255, 255, 255, 0.95));
 
         @include media(sm) {
             top: 0;
@@ -99,10 +103,18 @@
             transform: translate(-50%, -50%);
         }
 
+        @include media(md-down) {
+            width: 162px;
+        }
+
         @include media(lg-up) {
             top: 50%;
             left: 0;
             transform: translate(-50%, -50%);
+        }
+
+        @include media(lg-up) {
+            width: 201px;
         }
     }
 
