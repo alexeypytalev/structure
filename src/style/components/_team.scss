@@ -1,0 +1,88 @@
+.team {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    overflow: hidden;
+
+    @include media(xl) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    &__title {
+        @include media(sm) {
+            margin-bottom: 20px;
+        }
+
+        @include media(md-up) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__descr {
+        max-width: 522px;
+
+        @include media(sm) {
+            margin-bottom: 32px;
+        }
+
+        @include media(md) {
+            margin-bottom: 40px;
+        }
+
+        @include media(lg-up) {
+            margin-bottom: 80px;
+        }
+    }
+
+    &__members {
+        position: relative;
+    }
+
+    &__members-inner {
+        @include media(lg) {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @include media(xl) {
+            padding: 38px 34px 55px;
+            display: grid;
+            grid-gap: 40px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    &__circle,
+    &__circles {
+        display: none;
+    }
+
+    &__circle {
+        @include media(lg) {
+            top: -55px;
+            right: -38px;
+        }
+
+        @include media(lg-up) {
+            display: block;
+            position: absolute;
+            width: 268px;
+        }
+
+        @include media(xl) {
+            top: -102px;
+            right: -113px;
+        }
+    }
+
+    &__circles {
+        @include media(xl) {
+            display: block;
+            position: absolute;
+            width: 249px;
+            bottom: -120px;
+            left: -269px;
+        }
+    }
+}

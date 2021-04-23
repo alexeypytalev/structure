@@ -1,0 +1,10 @@
+section.team
+    .team__inner.l-wrap
+        .team__title.h2 Team
+        p.team__descr Loram ipsum dolor si amet Loram ipsum dolor si amet Loram ipsum dolor si amet Loram ipsum dolor si amet
+        .team__members.noise-box-lg-up
+            .team__members-inner.noise-box-lg-up__inner
+                - for (let i = 0; i < team.length; i++)
+                    +team-member(team[i])
+            .team__circle: img.img-fluid(src="./img/team-circle.png", alt="team circle")
+            .team__circles: img.img-fluid(src="./img/team-circles.png", alt="team circles")

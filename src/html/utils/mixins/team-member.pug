@@ -1,0 +1,7 @@
+mixin team-member(data)
+    - const {name, descr, img} = data
+        .team-member.noise-box-md-down
+            .team-member__inner.noise-box-md-down__inner
+                .team-member__img: img.img-fluid(src=`./img/${img}`, alt= name)
+                h3.team-member__name= name
+                p.team-member__descr= descr

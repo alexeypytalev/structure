@@ -1,0 +1,64 @@
+.team-member {
+    @include media(sm) {
+        & + & {
+            margin-top: 32px;
+        }
+    }
+
+    @include media(md-lg) {
+        & + & {
+            margin-top: 40px;
+        }
+    }
+
+    @include media(lg) {
+        width: 589px;
+
+        &:nth-child(even) {
+            align-self: flex-end;
+        }
+    }
+
+    &__inner {
+        @include media(sm) {
+            padding: 32px;
+        }
+
+        @include media(md) {
+            padding: 48px;
+        }
+    }
+
+    &__name {
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 24px;
+        margin: 0 0 20px;
+
+        @include media(md-up) {
+            font-size: 28px;
+        }
+    }
+
+    &__descr {
+        margin-bottom: 0;
+    }
+
+    &__img {
+        display: flex;
+        align-items: center;
+        width: 162px;
+        height: 162px;
+        overflow: hidden;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.035);
+
+        @include media(sm) {
+            margin-bottom: 21px;
+        }
+
+        @include media(md-up) {
+            margin-bottom: 35px;
+        }
+    }
+}

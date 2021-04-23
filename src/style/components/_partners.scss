@@ -11,6 +11,10 @@
         @include media(sm) {
             margin-bottom: 32px;
         }
+
+        @include media(lg-up) {
+            margin-bottom: 80px;
+        }
     }
 
     &__brands {
