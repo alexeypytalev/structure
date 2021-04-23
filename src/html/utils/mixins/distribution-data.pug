@@ -1,5 +1,5 @@
 mixin distribution-data(data, i)
     - const {value, descr} = data
-    .distribution-data(class=`distribution-data--${++i}`)
+    .distribution-data.line-box(class=`distribution-data--${++i}`)
         .distribution-data__value= value
         .distribution-data__descr= descr

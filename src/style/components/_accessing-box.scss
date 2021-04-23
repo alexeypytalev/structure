@@ -1,0 +1,46 @@
+.accessing-box {
+    padding-left: 24px;
+
+    @include media(md-down) {
+        & + & {
+            margin-top: 40px;
+        }
+    }
+
+    @include media(lg-up) {
+        &--1 {
+            grid-area: oracle;
+        }
+
+        &--2 {
+            grid-area: workers;
+        }
+
+        &--3 {
+            grid-area: protocols;
+            margin-top: 40px;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        color: #ffffff;
+        margin: 0 0 4px;
+    }
+
+    &__descr {
+        margin: 0;
+
+        @include media(md-down) {
+            font-weight: 700;
+        }
+
+        @include media(lg) {
+            max-width: 291px;
+        }
+
+        @include media(xl) {
+            max-width: 336px;
+        }
+    }
+}

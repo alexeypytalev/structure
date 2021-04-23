@@ -1,0 +1,7 @@
+section.accessing
+    .accessing__inner.l-wrap
+        .accessing__title.h2 Accessing to External Data
+        .accessing__imgs
+        .accessing__info
+            - for (let i = 0; i < accessing.length; i++)
+                +accessing-box(accessing[i], i)
