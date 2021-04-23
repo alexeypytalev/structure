@@ -54,10 +54,6 @@
         @include media(sm) {
             padding-top: 117px;
         }
-
-        @include media(xl) {
-            padding-top: 155px;
-        }
     }
 
     &__content {
@@ -74,6 +70,7 @@
         }
 
         @include media(lg) {
+            overflow: hidden;
             padding-top: 70px;
         }
 
@@ -82,7 +79,7 @@
         }
 
         @include media(xl) {
-            padding-top: 100px;
+            padding-top: 125px;
         }
     }
 
@@ -113,13 +110,14 @@
 
         @include media(lg) {
             width: 450px;
+            height: 450px;
             top: -52px;
             right: 106px;
         }
 
         @include media(xl) {
             width: 600px;
-            top: 20px;
+            top: 0;
             right: 30px;
         }
     }
