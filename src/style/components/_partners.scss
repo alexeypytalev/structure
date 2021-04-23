@@ -15,18 +15,14 @@
 
     &__brands {
         display: grid;
+        grid-gap: 32px;
 
         @include media(sm) {
-            grid-gap: 16px;
-            grid-template-columns: repeat(auto-fit, 150px);
+            grid-template-columns: repeat(2, 1fr);
         }
 
-        @include media(md) {
+        @include media(md-down) {
             grid-template-columns: repeat(auto-fit, 189px);
-        }
-
-        @include media(md-up) {
-            grid-gap: 32px;
         }
 
         @include media(lg-up) {
@@ -35,19 +31,15 @@
         }
     }
 
-    &__brand {
+    &__logo {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: url('../img/partners-card.png');
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: contain;
-        height: 145px;
+    }
 
+    &__brand {
         @include media(sm) {
             height: 90px;
-            grid-gap: 16px;
 
             svg {
                 max-width: 120px;
@@ -62,6 +54,10 @@
                 max-width: 131px;
                 max-height: 65px;
             }
+        }
+
+        @include media(lg-up) {
+            height: 145px;
         }
     }
 }

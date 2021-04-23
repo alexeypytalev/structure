@@ -1,16 +1,6 @@
 .understanding-box {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 128px;
-    border-radius: 24px;
-    padding: 28px;
-    background-color: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(100px);
-    background-image: url('../img/sbs-card.png');
-    background-repeat: no-repeat;
-    background-size: cover;
 
     @include media(sm) {
         margin-bottom: 24px;
@@ -18,6 +8,12 @@
         &:last-child {
             margin-bottom: 0;
         }
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     &__divider {
