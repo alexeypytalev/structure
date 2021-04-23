@@ -1,0 +1,10 @@
+section.distribution
+    .distribution__inner.l-wrap
+        .distribution__title.h2 Token Distribution
+        .distribution__main
+            .distribution__imgs
+                img.distribution__img-crystal.img-fluid(src="./img/token-crystal.png", alt="Token Distribution")
+                img.distribution__img-circle.img-fluid(src="./img/token-ellipse.png", alt="Token Ellipse")
+            .distribution__data
+                - for (let i = 0; i < distribution.length; i++)
+                    +distribution-data(distribution[i], i)

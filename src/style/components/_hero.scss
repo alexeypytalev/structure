@@ -95,6 +95,7 @@
         }
 
         @include media(sm) {
+            overflow: hidden;
             top: -152px;
             width: 333px;
         }
@@ -188,15 +189,5 @@
         @include media(lg-up) {
             margin-bottom: 125px;
         }
-    }
-}
-
-@keyframes rotating {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
     }
 }

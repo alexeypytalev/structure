@@ -21,13 +21,13 @@
             grid-template-columns: repeat(2, 1fr);
         }
 
-        @include media(md-down) {
-            grid-template-columns: repeat(auto-fit, 189px);
+        @include media(md-lg) {
+            grid-template-columns: repeat(3, 1fr);
         }
 
-        @include media(lg-up) {
+        @include media(xl) {
             padding-top: 40px;
-            grid-template-columns: repeat(auto-fit, 265px);
+            grid-template-columns: repeat(4, 1fr);
         }
     }
 

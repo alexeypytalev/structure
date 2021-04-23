@@ -1,0 +1,72 @@
+.distribution {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    overflow: hidden;
+
+    @include media(xl) {
+        padding-top: 120px;
+        padding-bottom: 110px;
+    }
+
+    &__main {
+        position: relative;
+
+        @include media(sm) {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        @include media(md) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        @include media(lg) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+    &__title {
+        @include media(lg-up) {
+            margin-bottom: 78px;
+            text-align: center;
+        }
+    }
+
+    &__imgs {
+        position: relative;
+
+        @include media(sm) {
+            width: 440px;
+            margin-left: -28px;
+            transform: translateX(-50%);
+        }
+
+        @include media(md) {
+            width: 380px;
+        }
+
+        @include media(md-up) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @include media(lg-up) {
+            width: 548px;
+        }
+    }
+
+    &__img-crystal {
+        animation: rotating 40s linear infinite;
+    }
+
+    &__img-circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        animation: rotating-back 10s linear infinite;
+    }
+}

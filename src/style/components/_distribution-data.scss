@@ -1,0 +1,124 @@
+.distribution-data {
+    position: absolute;
+    padding-left: 24px;
+    border-radius: inherit;
+    background-image: url('../img/token-line.svg');
+    background-repeat: no-repeat;
+    background-position: 0 center;
+
+    &__value {
+        font-weight: 700;
+        font-size: 26px;
+        color: #ffffff;
+        margin-bottom: 4px;
+
+        @include media(md-up) {
+            font-size: 40px;
+        }
+    }
+
+    &__descr {
+        font-size: 16px;
+        line-height: 1.44;
+
+        @include media(md-up) {
+            font-size: 18px;
+        }
+    }
+
+    @include media(sm) {
+        &--1 {
+            top: 0;
+            left: 0;
+        }
+
+        &--2 {
+            top: 60px;
+            left: 144px;
+        }
+
+        &--3 {
+            top: 190px;
+            left: 220px;
+        }
+
+        &--4 {
+            bottom: 190px;
+            left: 220px;
+        }
+
+        &--5 {
+            bottom: 60px;
+            left: 144px;
+        }
+
+        &--6 {
+            left: 0;
+            bottom: 0;
+        }
+    }
+
+    @include media(md) {
+        &--1,
+        &--5 {
+            left: 55px;
+        }
+
+        &--2,
+        &--6 {
+            right: 55px;
+        }
+
+        &--3 {
+            left: -30px;
+            width: 120px;
+        }
+
+        &--4 {
+            right: -30px;
+        }
+
+        &--6 {
+            width: 120px;
+            white-space: nowrap;
+        }
+    }
+
+    @include media(md-up) {
+        &--1,
+        &--2 {
+            top: 0;
+        }
+
+        &--3,
+        &--4 {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &--5,
+        &--6 {
+            bottom: 0;
+        }
+    }
+
+    @include media(lg-up) {
+        &--1,
+        &--5 {
+            left: 85px;
+        }
+
+        &--2,
+        &--6 {
+            right: 85px;
+        }
+
+        &--3 {
+            left: 0;
+        }
+
+        &--4 {
+            right: 0;
+        }
+    }
+}
