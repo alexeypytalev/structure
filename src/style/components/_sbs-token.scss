@@ -1,0 +1,27 @@
+.sbs-token {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    overflow: hidden;
+
+    @include media(xl) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    &__title {
+        @include media(sm) {
+            margin-bottom: 30px;
+        }
+
+        @include media(lg-up) {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__tokens {
+        @include media(lg-up) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

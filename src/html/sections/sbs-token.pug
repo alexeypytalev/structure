@@ -1,0 +1,6 @@
+section.sbs-token
+    .sbs-token__inner.l-wrap
+        .sbs-token__title.h2 SBS Token Economics
+        .sbs-token__tokens
+            - for (let i = 0; i < sbsTokens.length; i++)
+                +sbs-token-box(sbsTokens[i])

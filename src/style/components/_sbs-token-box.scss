@@ -1,0 +1,112 @@
+.sbs-token-box {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+
+    @include media(sm) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 320px;
+        height: 506px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px 20px 100px;
+
+        &:not(:last-child) {
+            margin-bottom: 121px;
+        }
+    }
+
+    @include media(md) {
+        height: 205px;
+
+        &:nth-child(even) {
+            padding-left: 40px;
+            padding-right: 141px;
+        }
+
+        &:nth-child(odd) {
+            padding-right: 40px;
+            padding-left: 141px;
+        }
+
+        &:nth-child(even) &__img {
+            top: 50%;
+            right: 0;
+            transform: translate(50%, -50%);
+        }
+
+        &:nth-child(odd) &__img {
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    @include media(md-up) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url('../img/sbs-card-token.png');
+
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+
+    @include media(lg) {
+        padding-left: 141px;
+        padding-right: 40px;
+    }
+
+    @include media(lg-up) {
+        height: 245px;
+        width: 772px;
+
+        &:nth-child(even) {
+            align-self: flex-end;
+        }
+    }
+
+    @include media(xl) {
+        width: 772px;
+        padding-left: 165px;
+        padding-right: 56px;
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 700;
+        color: #ffffff;
+        margin: 0 0 12px;
+
+        @include media(sm) {
+            font-size: 24px;
+            line-height: 34px;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        z-index: 1;
+
+        @include media(sm) {
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @include media(lg-up) {
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__descr {
+        margin: 0;
+    }
+}

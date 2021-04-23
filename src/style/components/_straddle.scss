@@ -10,13 +10,36 @@
         padding-bottom: 120px;
     }
 
+    &__inner {
+        @include media(lg-up) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
     &__info {
         @include media(lg) {
             width: 629px;
         }
 
+        @include media(lg-up) {
+            align-self: flex-end;
+        }
+
         @include media(xl) {
             width: 760px;
+        }
+    }
+
+    &__data {
+        padding-top: 20px;
+
+        @include media(md-up) {
+            padding-top: 60px;
+        }
+
+        @include media(lg-up) {
+            width: 772px;
         }
     }
 
