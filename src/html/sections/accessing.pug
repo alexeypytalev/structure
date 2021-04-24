@@ -2,6 +2,17 @@ section.accessing
     .accessing__inner.l-wrap
         .accessing__title.h2 Accessing to External Data
         .accessing__imgs
+            .accessing-icons
+                include ../svg/cloud
+                include ../svg/lock
+                include ../svg/stats
+            include ../components/accessing-oracle
+            .accessing-atom: img.img-fluid(src="./img/acc-atom.png", alt="atom")
+            include ../components/accessing-oracle
+            .accessing-icons
+                include ../svg/swift
+                include ../svg/paypal
+                include ../svg/bitcoin
         .accessing__info
             - for (let i = 0; i < accessing.length; i++)
                 +accessing-box(accessing[i], i)

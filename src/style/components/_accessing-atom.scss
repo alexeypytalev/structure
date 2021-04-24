@@ -1,0 +1,21 @@
+.accessing-atom {
+    flex-shrink: 0;
+
+    @include media(sm) {
+        min-width: 162px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    @include media(md) {
+        width: 265px;
+    }
+
+    @include media(lg) {
+        width: 322px;
+    }
+
+    @include media(xl) {
+        width: 482px;
+    }
+}

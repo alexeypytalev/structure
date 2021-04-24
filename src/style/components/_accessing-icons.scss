@@ -1,0 +1,26 @@
+.accessing-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+
+    @include media(sm) {
+        width: 140px;
+
+        svg {
+            width: 32px;
+        }
+    }
+
+    @include media(md-up) {
+        flex-direction: column;
+    }
+
+    @include media(md-up) {
+        height: 200px;
+
+        svg {
+            max-height: 45px;
+        }
+    }
+}

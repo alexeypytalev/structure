@@ -30,5 +30,27 @@
                 'oracle . workers'
                 '. protocols .';
         }
+
+        @include media(md-down) {
+            padding-top: 80px;
+        }
+
+        @include media(lg) {
+            padding-top: 40px;
+        }
+
+        @include media(xl) {
+            padding-top: 65px;
+        }
+    }
+
+    &__imgs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include media(sm) {
+            flex-direction: column;
+        }
     }
 }

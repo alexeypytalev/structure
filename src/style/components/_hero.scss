@@ -88,7 +88,7 @@
 
         svg {
             max-width: 100%;
-            animation: rotating 60s linear infinite;
+            animation: rotating-back 60s linear infinite;
         }
 
         @include media(sm) {

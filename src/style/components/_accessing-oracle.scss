@@ -1,0 +1,110 @@
+.accessing-oracle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    @include media(sm) {
+        margin-top: 9px;
+        margin-bottom: 9px;
+        flex-direction: column;
+    }
+
+    @include media(md) {
+        flex-grow: 1;
+    }
+
+    @include media(lg) {
+        width: 226px;
+    }
+
+    @include media(xl) {
+        width: 272px;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        background-color: #fff;
+        border-radius: 50%;
+
+        @include media(md-down) {
+            width: 6px;
+            height: 6px;
+        }
+
+        @include media(lg-up) {
+            width: 12px;
+            height: 12px;
+        }
+    }
+
+    &::after {
+        @include media(sm) {
+            order: 2;
+        }
+    }
+
+    &__line {
+        height: 20px;
+
+        @include media(sm) {
+            margin-top: 8px;
+            margin-bottom: 8px;
+
+            &:nth-of-type(2) {
+                order: 1;
+            }
+        }
+
+        @include media(md-up) {
+            transform: rotate(90deg);
+        }
+
+        @include media(xl) {
+            height: 40px;
+        }
+    }
+
+    &__img {
+        @include media(sm) {
+            width: 100%;
+            min-width: 75px;
+            max-width: 110px;
+        }
+
+        @include media(md) {
+            width: 75px;
+        }
+
+        @include media(lg-up) {
+            width: 138px;
+        }
+    }
+
+    &__descr {
+        font-weight: 700;
+        margin: 0;
+        text-align: center;
+        font-weight: bold;
+        color: #ffffff;
+
+        @include media(md-down) {
+            padding-top: 11px;
+            font-size: 14px;
+        }
+
+        @include media(md-up) {
+            width: 100%;
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+
+        @include media(lg-up) {
+            font-size: 24px;
+            padding-top: 20px;
+        }
+    }
+}
