@@ -1,0 +1,10 @@
+mixin roadmap-box(data)
+    - const {title, descr, list, img} = data
+        .roadmap-box
+            .roadmap-box__img: img.img-fluid(src=`./img/${img}`, alt= title)
+            h3.roadmap-box__title= title
+            p.roadmap-box__descr= descr
+            if (list)
+                ul.roadmap-box__list
+                    each item in list
+                        li= item

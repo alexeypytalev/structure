@@ -1,0 +1,46 @@
+.roadmap {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    overflow: hidden;
+
+    @include media(xl) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    &__title {
+        margin-bottom: 35px;
+    }
+
+    &__header {
+        position: relative;
+
+        .divider {
+            position: absolute;
+            top: 100%;
+            margin-top: 235px;
+            left: 0;
+            right: 0;
+            pointer-events: none;
+        }
+    }
+
+    &__descr {
+        max-width: 522px;
+
+        @include media(md-down) {
+            margin-bottom: 80px;
+        }
+
+        @include media(lg-up) {
+            margin-bottom: 100px;
+        }
+    }
+
+    &__swiper {
+        padding-right: calc(100% - 230px);
+        display: flex;
+        margin: 0;
+        overflow: visible;
+    }
+}

@@ -19,7 +19,7 @@
             position: absolute;
             z-index: 1;
             background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(100px);
+            backdrop-filter: blur(15px);
 
             @include media(sm) {
                 top: 117px;

@@ -1,0 +1,42 @@
+.roadmap-box {
+    color: rgba(255, 255, 255, 0.3);
+    transition: color 0.5s;
+    cursor: pointer;
+
+    &:hover {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .swiper-slide-active & {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        margin: 0;
+    }
+
+    &__descr {
+        font-weight: 700;
+        margin: 0;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0 0 0 30px;
+    }
+
+    &__img {
+        width: 92px;
+        margin-bottom: 90px;
+        opacity: 0;
+        transform: scale(0) translateY(150%);
+        transition: all 0.5s;
+
+        .swiper-slide-active & {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+    }
+}
