@@ -37,7 +37,7 @@
     "webpack-stream": "^5.2.1"
   },
   "browserslist": [
-    "last 1 version",
+    "last 5 version",
     "> 1%",
     "maintained node versions",
     "not dead"
